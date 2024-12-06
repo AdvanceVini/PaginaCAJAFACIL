@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: hsl(18, 45%, 94%);
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Estructura principal del cuerpo */
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilos de la cabecera */
+.headweb {
+    background-color: #ffffff;
+    text-align: center;
+    font-size: 24px;
+}
+
+#header img {
+    width: 100%;
+    min-width: 50%;
+    height: auto;
+    min-height: 50%;
+}
+
+/* Contenedor principal */
+.main-container {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* Configuración de los contenedores */
+.container1 {
+    width: calc(70% - 30px);
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.container2 {
+    width: calc(30% - 10px);
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+/* Estilo para el área de texto */
+#notas {
+    width: 100%;
+    max-width: 60%;
+    min-width: 240px;
+    max-height: 1000px;
+    min-height: 200px;
+    overflow: auto;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+#notas.excedido {
+    color: red;
+}
+
+/* Estilo del calendario */
+#calendar {
+    width: 250px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    text-align: center;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#date {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#clock {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+}
+
+#calendar h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+/* Estilo para el valor total */
+#valorTotalCentavos {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Estilo para los inputs de monedas y billetes */
+input[type="number"] {
+    width: 200px;
+    height: 40px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: right;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+label {
+    display: inline-block;
+    width: 250px;
+    font-size: 18px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.container {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.total {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#containerTO {
+    height: auto;
+    width: auto;
+    border: 1px solid #ccc;
+    background-color: #f5f5f5;
+    margin: 40px auto;
+    text-align: center;
+    margin-bottom: 80px;
+    font-size: 15px;
+}
+
+#valorTotalP {
+    font-size: 30px;
+}
+
+input[type="text"], input[type="number"] {
+    width: 200px;
+    padding: 10px;
+    font-size: 14px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 14px;
+    margin: 5px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 5px 0;
+}
+.imagenes {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+/* Contador de inventario */
+#contador-inventario {
+    height: auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    margin: 40px auto;
+    text-align: center;
+    margin-bottom: 80px;
+    font-size: 15px;
+}
+.rectangulo {
+    width: 800px; /* Ancho del rectángulo */
+    height: 600px; /* Altura del rectángulo */
+    background-color: #4CAF50; /* Color de fondo */
+    border: 2px solid #000; /* Borde negro */
+    margin: 10px auto; /* Centrado horizontal */
+}
+/*---*/
+#listaElementos li {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#cantidadTotal {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.container1 > div, .container2 > div {
+    background-color: #ecddd3;
+    margin-bottom: 15px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+/* Pie de página */
+.pie {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Ajuste de tamaños para pantallas pequeñas */
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+    }
+    
+    .container1, .container2 {
+        width: 100%;
+    }
+
+    #header img {
+        width: 100%;
+        height: 70px;
+    }
+    .rectangulo {
+        width: 300px; /* Ancho del rectángulo */
+        height: 200px; /* Altura del rectángulo */
+        background-color: #4CAF50; /* Color de fondo */
+        border: 2px solid #000; /* Borde negro */
+        margin: 10px auto; /* Centrado horizontal */
+    }
+}
