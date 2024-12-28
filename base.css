@@ -232,6 +232,11 @@ li {
 
 /* Ajuste de tamaños para pantallas pequeñas */
 @media (max-width: 768px) {
+    .headweb {
+    background-color: #ffffff;
+    text-align: center;
+    font-size: 30px;
+}
     .main-container {
         flex-direction: column;
     }
