@@ -24,6 +24,14 @@ body {
     text-align: center;
     font-size: 40px;
 }
+/* base.css */
+.logo {
+  width: 200px; /* Cambia el tamaño de la imagen */
+  height: auto; /* Mantiene la proporción de la imagen */
+  border: 2px solid #000; /* Agrega un borde negro */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Sombra */
+}
 
 
 
