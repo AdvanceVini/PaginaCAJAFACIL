@@ -256,4 +256,8 @@ li {
         border: 2px solid #000; /* Borde negro */
         margin: 10px auto; /* Centrado horizontal */
     }
+    .logo {
+  width: auto; /* Cambia el tamaño de la imagen */
+  height: 140px; /* Mantiene la proporción de la imagen */
+}
 }
