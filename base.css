@@ -24,13 +24,11 @@ body {
     text-align: center;
     font-size: 40px;
 }
-/* base.css */
+
 .logo {
-  width: auto; /* Cambia el tamaño de la imagen */
-  height: auto; /* Mantiene la proporción de la imagen */
+    width: auto;
+    height: auto;
 }
-
-
 
 /* Contenedor principal */
 .main-container {
@@ -42,20 +40,19 @@ body {
 }
 
 /* Configuración de los contenedores */
-.container1 {
-    width: calc(70% - 30px);
+.container1, .container2 {
     background-color: #ffffff;
     padding: 20px;
     border: 1px solid #ddd;
     margin-bottom: 20px;
 }
 
+.container1 {
+    width: calc(70% - 30px);
+}
+
 .container2 {
     width: calc(30% - 10px);
-    background-color: #fff;
-    padding: 20px;
-    border: 1px solid #ddd;
-    margin-bottom: 20px;
 }
 
 /* Estilo para el área de texto */
@@ -70,7 +67,6 @@ body {
     border: 1px solid #ddd;
     border-radius: 5px;
     font-size: 16px;
-    font-family: Arial, sans-serif;
 }
 
 #notas.excedido {
@@ -147,12 +143,10 @@ h2 {
 
 #containerTO {
     height: auto;
-    width: auto;
     border: 1px solid #ccc;
     background-color: #f5f5f5;
-    margin: 40px auto;
+    margin: 40px auto 80px;
     text-align: center;
-    margin-bottom: 80px;
     font-size: 15px;
 }
 
@@ -180,31 +174,32 @@ ul {
 li {
     margin: 5px 0;
 }
+
 .imagenes {
     font-size: 20px;
     text-align: center;
     margin-bottom: 10px;
 }
 
-
 /* Contador de inventario */
 #contador-inventario {
     height: auto;
     padding: 20px;
     background-color: #f5f5f5;
-    margin: 40px auto;
+    margin: 40px auto 80px;
     text-align: center;
-    margin-bottom: 80px;
     font-size: 15px;
 }
+
 .rectangulo {
-    width: 800px; /* Ancho del rectángulo */
-    height: 600px; /* Altura del rectángulo */
-    background-color: #4CAF50; /* Color de fondo */
-    border: 2px solid #000; /* Borde negro */
-    margin: 10px auto; /* Centrado horizontal */
+    width: 800px;
+    height: 600px;
+    background-color: #4CAF50;
+    border: 2px solid #000;
+    margin: 10px auto;
 }
-/*---*/
+
+/* Elementos de la lista */
 #listaElementos li {
     font-size: 20px;
     font-weight: bold;
@@ -238,26 +233,23 @@ li {
 /* Ajuste de tamaños para pantallas pequeñas */
 @media (max-width: 768px) {
     .headweb {
-    background-color: #ffffff;
-    text-align: center;
-    font-size: 30px;
-}
+        font-size: 30px;
+    }
+
     .main-container {
         flex-direction: column;
     }
-    
+
     .container1, .container2 {
         width: 100%;
     }
+
     .rectangulo {
-        width: 300px; /* Ancho del rectángulo */
-        height: 200px; /* Altura del rectángulo */
-        background-color: #4CAF50; /* Color de fondo */
-        border: 2px solid #000; /* Borde negro */
-        margin: 10px auto; /* Centrado horizontal */
+        width: 300px;
+        height: 200px;
     }
+
     .logo {
-  width: auto; /* Cambia el tamaño de la imagen */
-  height: 140px; /* Mantiene la proporción de la imagen */
-}
+        height: 140px;
+    }
 }
