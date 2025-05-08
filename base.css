@@ -41,9 +41,9 @@ body {
 
 /* Configuración de los contenedores */
 .container1, .container2 {
-    background-color: #f5be49;
+    background-color: #ecddd3;
     padding: 20px;
-    border: 2px solid #ddd;
+    border: 2px solid #000000;
     margin-bottom: 20px;
 }
 
